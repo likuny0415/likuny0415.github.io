@@ -23,6 +23,7 @@ When you compare with input and quote, mark quote.childNode[cur] with className 
 
 Answers:
 
+HTML
 ```HTML
 <!DOCTYPE html>
 <html lang="en">
@@ -47,6 +48,7 @@ Answers:
 </html>
 ```
 
+Javascript
 ```javascript
 // inside script.js
 // all of our quotes
@@ -139,6 +141,7 @@ typedElement.addEventListener('input', () => {
 
 ```
 
+CSS
 ```css
 .highlight {
     background-color: yellow;
