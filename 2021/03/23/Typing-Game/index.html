@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="How to create a typing game using eventThings to be cared ofThree blocks in HTML Quote Block It has id&#x3D;’quote’ You can add more quote into the quot list Element in Quote Block needs to be separate by">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Typing-Game">
+<meta property="og:url" content="http://example.com/2021/03/23/Typing-Game/index.html">
+<meta property="og:site_name" content="Kunyang Li">
+<meta property="og:description" content="How to create a typing game using eventThings to be cared ofThree blocks in HTML Quote Block It has id&#x3D;’quote’ You can add more quote into the quot list Element in Quote Block needs to be separate by">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-03-23T03:36:43.000Z">
+<meta property="article:modified_time" content="2021-04-16T10:59:12.239Z">
+<meta property="article:author" content="Kunyang Li">
+<meta property="article:tag" content="Web Development">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Typing-Game</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+      
+<link rel="stylesheet" href="/css/rtl.css">
+
+    
+    <!-- rss -->
+    
+    
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/tags/">tags</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2021/04/03/Pub-Sub-Pattern/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2021/03/22/Git-Config/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2021/03/23/Typing-Game/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2021/03/23/Typing-Game/&text=Typing-Game"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2021/03/23/Typing-Game/&title=Typing-Game"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2021/03/23/Typing-Game/&is_video=false&description=Typing-Game"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Typing-Game&body=Check out this article: http://example.com/2021/03/23/Typing-Game/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2021/03/23/Typing-Game/&title=Typing-Game"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2021/03/23/Typing-Game/&title=Typing-Game"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2021/03/23/Typing-Game/&title=Typing-Game"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2021/03/23/Typing-Game/&title=Typing-Game"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2021/03/23/Typing-Game/&name=Typing-Game&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2021/03/23/Typing-Game/&t=Typing-Game"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#How-to-create-a-typing-game-using-event"><span class="toc-number">1.</span> <span class="toc-text">How to create a typing game using event</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Things-to-be-cared-of"><span class="toc-number">1.1.</span> <span class="toc-text">Things to be cared of</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Three-blocks-in-HTML"><span class="toc-number">1.1.1.</span> <span class="toc-text">Three blocks in HTML</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#How-to-indicate-error-and-highlight"><span class="toc-number">1.1.2.</span> <span class="toc-text">How to indicate error and highlight</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Typing-Game
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Kunyang Li</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2021-03-23T03:36:43.000Z" itemprop="datePublished">2021-03-23</time>
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link-link" href="/tags/Web-Development/" rel="tag">Web Development</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="How-to-create-a-typing-game-using-event"><a href="#How-to-create-a-typing-game-using-event" class="headerlink" title="How to create a typing game using event"></a>How to create a typing game using event</h1><h2 id="Things-to-be-cared-of"><a href="#Things-to-be-cared-of" class="headerlink" title="Things to be cared of"></a>Things to be cared of</h2><h3 id="Three-blocks-in-HTML"><a href="#Three-blocks-in-HTML" class="headerlink" title="Three blocks in HTML"></a>Three blocks in HTML</h3><ul>
+<li>Quote Block<ul>
+<li>It has id=’quote’</li>
+<li>You can add more quote into the quot list</li>
+<li>Element in Quote Block needs to be separate by <span> </li>
+</ul>
+</li>
+<li>Message Block<ul>
+<li>The information of time after you finishing the game</li>
+</ul>
+</li>
+<li>Input Block<ul>
+<li>Used to type and compare with the element in quote block</li>
+</ul>
+</li>
+</ul>
+<h3 id="How-to-indicate-error-and-highlight"><a href="#How-to-indicate-error-and-highlight" class="headerlink" title="How to indicate error and highlight"></a>How to indicate error and highlight</h3><p>When you compare with input and quote, mark quote.childNode[cur] with className = highlight. You need to remove highlight when you finish typing a word. If the input is not equal with quote just add className=error</p>
+<p>Answers:</p>
+<p>HTML</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;style.css&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Welcome to type game<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>Click start to begin the game<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">&quot;quote&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">&quot;message&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">aria-label</span>=<span class="string">&quot;current world&quot;</span> <span class="attr">id</span>=<span class="string">&quot;typed-value&quot;</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">id</span>=<span class="string">&quot;start&quot;</span>&gt;</span>start<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;script.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>Javascript</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// inside script.js</span></span><br><span class="line"><span class="comment">// all of our quotes</span></span><br><span class="line"><span class="keyword">const</span> quotes = [</span><br><span class="line">    <span class="string">&#x27;When you have eliminated the impossible, whatever remains, however improbable, must be the truth.&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;There is nothing more deceptive than an obvious fact.&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;I ought to know by this time that when a fact appears to be opposed to a long train of deductions it invariably proves to be capable of bearing some other interpretation.&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;I never make exceptions. An exception disproves the rule.&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;What one man can invent another can discover.&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Nothing clears up a case so much as stating it to another person.&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;Education never ends, Watson. It is a series of lessons, with the greatest for the last.&#x27;</span>,</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="comment">// keep track of the words, (and quote)</span></span><br><span class="line"><span class="keyword">let</span> words = [];</span><br><span class="line"><span class="keyword">let</span> wordIndex = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// keep track of start time</span></span><br><span class="line"><span class="keyword">let</span> startTime = <span class="built_in">Date</span>.now();</span><br><span class="line"></span><br><span class="line"><span class="comment">//quote element</span></span><br><span class="line"><span class="keyword">const</span> quoteElement = <span class="built_in">document</span>.getElementById(<span class="string">&#x27;quote&#x27;</span>);</span><br><span class="line"><span class="comment">//message element, after wining and indicate the time used</span></span><br><span class="line"><span class="keyword">const</span> messageElement = <span class="built_in">document</span>.getElementById(<span class="string">&#x27;message&#x27;</span>);</span><br><span class="line"><span class="comment">//track typed elements</span></span><br><span class="line"><span class="keyword">const</span> typedElement = <span class="built_in">document</span>.getElementById(<span class="string">&#x27;typed-value&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// first indicate the quote text after click the start button</span></span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">&#x27;start&#x27;</span>).addEventListener(<span class="string">&#x27;click&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// get a numer of random quote</span></span><br><span class="line">    <span class="keyword">const</span> randomNum = <span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * quotes.length);</span><br><span class="line">    <span class="comment">// get the quote</span></span><br><span class="line">    <span class="keyword">const</span> getQuote = quotes[randomNum];</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// put the quotes into the words array</span></span><br><span class="line">    words = getQuote.split(<span class="string">&#x27; &#x27;</span>)</span><br><span class="line">    wordIndex = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// append to quoteElement</span></span><br><span class="line">    <span class="comment">// !!!!! there is a white space between $&#123;word&#125; and &lt;/span&gt;</span></span><br><span class="line">    <span class="keyword">const</span> spanList = words.map(<span class="function"><span class="keyword">function</span>(<span class="params">word</span>) </span>&#123; <span class="keyword">return</span> <span class="string">`&lt;span&gt;<span class="subst">$&#123;word&#125;</span> &lt;/span&gt;`</span>&#125;)</span><br><span class="line">    quoteElement.innerHTML = spanList.join(<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//highlight the first element</span></span><br><span class="line">    quoteElement.childNodes[<span class="number">0</span>].className = <span class="string">&#x27;highlight&#x27;</span></span><br><span class="line">    messageElement.innerText = <span class="string">&#x27;&#x27;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// initiate the typedElement</span></span><br><span class="line">    typedElement.value = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    typedElement.focus();</span><br><span class="line"></span><br><span class="line">    <span class="comment">//initiate time</span></span><br><span class="line">    startTime = <span class="keyword">new</span> <span class="built_in">Date</span>().getTime();</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// add event listener to input value</span></span><br><span class="line"><span class="comment">// keep track of quoteElement and typed Element</span></span><br><span class="line">typedElement.addEventListener(<span class="string">&#x27;input&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">//get first word in the quote</span></span><br><span class="line">    <span class="keyword">const</span> word = words[wordIndex]</span><br><span class="line">    <span class="comment">// get typed value</span></span><br><span class="line">    <span class="keyword">const</span> typedValue = typedElement.value</span><br><span class="line"></span><br><span class="line">    <span class="comment">// game over</span></span><br><span class="line">    <span class="comment">// length == wordsIndex, typed == word</span></span><br><span class="line">    <span class="keyword">if</span> (typedValue === word &amp;&amp; wordIndex === words.length - <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="keyword">const</span> finishedTime = <span class="keyword">new</span> <span class="built_in">Date</span>().getTime() - startTime;</span><br><span class="line">        <span class="keyword">const</span> message = <span class="string">`Congratulations, you&#x27;ve finished in <span class="subst">$&#123;finishedTime / <span class="number">1000</span>&#125;</span> seconds`</span></span><br><span class="line">        messageElement.innerText = message;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span>(typedValue.endsWith(<span class="string">&#x27; &#x27;</span>) &amp;&amp; typedValue.trim() === word) &#123;</span><br><span class="line">        <span class="comment">// if the current word type correctly</span></span><br><span class="line">        <span class="comment">//1. clear the highlight</span></span><br><span class="line">        <span class="comment">//2. set the next word highlight</span></span><br><span class="line">        <span class="comment">//3. clear the typevalue</span></span><br><span class="line">        typedElement.value = <span class="string">&#x27;&#x27;</span></span><br><span class="line">        wordIndex = wordIndex + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> wordElement <span class="keyword">of</span> quoteElement.childNodes) &#123;</span><br><span class="line">            wordElement.className = <span class="string">&#x27;&#x27;</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// highlight new word</span></span><br><span class="line">        quoteElement.childNodes[wordIndex].className = <span class="string">&#x27;highlight&#x27;</span></span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (word.startsWith(typedValue)) &#123;</span><br><span class="line">        <span class="comment">// not finished yet, check the current word</span></span><br><span class="line">        typedElement.className = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        typedElement.className = <span class="string">&#x27;error&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>CSS</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.highlight</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: yellow;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.error</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: lightcoral;</span><br><span class="line">    <span class="attribute">border</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">font-family</span>:<span class="string">&#x27;Lucida Sans&#x27;</span>, <span class="string">&#x27;Lucida Sans Regular&#x27;</span>, <span class="string">&#x27;Lucida Grande&#x27;</span>, <span class="string">&#x27;Lucida Sans Unicode&#x27;</span>, Geneva, Verdana, sans-serif</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+  </div>
+  <div>
+    <a href="https://github.com/likuny0415/likuny0415.github.io/edit/myblog/source/_posts/Typing-Game.md" target="_blank">Edit</a>
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/tags/">tags</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#How-to-create-a-typing-game-using-event"><span class="toc-number">1.</span> <span class="toc-text">How to create a typing game using event</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Things-to-be-cared-of"><span class="toc-number">1.1.</span> <span class="toc-text">Things to be cared of</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Three-blocks-in-HTML"><span class="toc-number">1.1.1.</span> <span class="toc-text">Three blocks in HTML</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#How-to-indicate-error-and-highlight"><span class="toc-number">1.1.2.</span> <span class="toc-text">How to indicate error and highlight</span></a></li></ol></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2021/03/23/Typing-Game/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2021/03/23/Typing-Game/&text=Typing-Game"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2021/03/23/Typing-Game/&title=Typing-Game"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2021/03/23/Typing-Game/&is_video=false&description=Typing-Game"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Typing-Game&body=Check out this article: http://example.com/2021/03/23/Typing-Game/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2021/03/23/Typing-Game/&title=Typing-Game"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2021/03/23/Typing-Game/&title=Typing-Game"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2021/03/23/Typing-Game/&title=Typing-Game"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2021/03/23/Typing-Game/&title=Typing-Game"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2021/03/23/Typing-Game/&name=Typing-Game&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2021/03/23/Typing-Game/&t=Typing-Game"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2016-2021
+    Kunyang Li
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/tags/">tags</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+
+    <!-- jquery -->
+
+<script src="/lib/jquery/jquery.min.js"></script>
+
+
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+
+<!-- clipboard -->
+
+  
+<script src="/lib/clipboard/clipboard.min.js"></script>
+
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>
